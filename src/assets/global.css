@@ -11,11 +11,20 @@
     scroll-behavior: smooth;
   }
   
+  body{
+    background-color: red;
+    margin: 0;
+  }
+
   a {
     text-decoration: none;
   }
 
   * {
     list-style: none;
+  }
+
+  #app{
+    background-color: blue;
   }
   
