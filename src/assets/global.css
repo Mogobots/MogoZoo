@@ -1,0 +1,21 @@
+:root {
+    --theme-color: white;
+    --primary-color: #2eb924;
+    --secundary-color: #f7c331;
+    --text-color-inverse: white;
+    --text-color: rgb(217, 22, 22);
+    --navbar-shallow-color: #e5e5e5;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  * {
+    list-style: none;
+  }
+  
