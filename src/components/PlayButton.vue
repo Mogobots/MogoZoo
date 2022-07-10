@@ -1,10 +1,10 @@
-<script>
-export default {
-  name: "PlayButton",
+<script setup>
+const botonPlay = () => {
+  console.log("No hago nada");
 };
 
-// const botonPlay = () => {
-//   console.log("No hago nada");
+// export default {
+//   name: "PlayButton",
 // };
 </script>
 
@@ -12,7 +12,7 @@ export default {
   <div>
     <h1>COMPONENTE BOTONCITO</h1>
     <button type="button" class="botoncitoPlay" @click="botonPlay()">
-      Play <img alt="Play Icon" id="btnplay" src="./assets/iconplay.png" />
+      Play <img alt="Play Icon" id="btnplay" src="../assets/iconplay.png" />
     </button>
   </div>
 </template>
