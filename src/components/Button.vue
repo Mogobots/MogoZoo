@@ -4,18 +4,18 @@
 
 <script>
 export default {
-  name: 'Button',
+  name: "Button",
   props: {
     text: String,
-    audio: String
+    audio: String,
   },
   methods: {
     play() {
-      console.log('funciono')
-      new Audio(this.audio).play()
-    }
-  }
-}
+      console.log("funciono");
+      new Audio(this.audio).play();
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>

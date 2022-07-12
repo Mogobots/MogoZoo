@@ -11,7 +11,7 @@
         placeholder="Que animal queres ver?"
       />
       <button type="submit" class="searchButton">
-        <i class="fa fa-search"></i>
+        <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
       </button>
     </div>
     <div class="menu">
@@ -56,15 +56,12 @@ export default {
   padding: 0 0.5rem;
 }
 
-.logo , .menu{
-
+.logo,
+.menu {
   margin: 5px 20px;
 }
 
 .menu a:hover {
   color: var(--primary-color);
-}
-
-.searchButton {
 }
 </style>

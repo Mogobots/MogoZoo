@@ -31,7 +31,7 @@ export default {
     'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: rgba(147, 165, 165, 0.301);
   width: 200px;
-  margin: 10px;
+  margin: 100px auto;
   border-radius: 10px;
   text-align: center;
   overflow: hidden;
