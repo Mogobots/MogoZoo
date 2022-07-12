@@ -1,17 +1,22 @@
-<script setup>
-const botonPlay = () => {
-  console.log("No hago nada");
+<script>
+export default {
+  name: "PlayButton",
+  methods: {
+    play() {
+      console.log("funciono");
+      new Audio(this.audio).play();
+    },
+  },
+  props: {
+    audio: String
+  }
 };
-
-// export default {
-//   name: "PlayButton",
-// };
 </script>
 
 <template>
   <div>
     <h1>COMPONENTE BOTONCITO</h1>
-    <button type="button" class="botoncitoPlay" @click="botonPlay()">
+    <button type="button" class="botoncitoPlay" @click="play">
       Play <img alt="Play Icon" id="btnplay" src="../assets/iconplay.png" />
     </button>
   </div>

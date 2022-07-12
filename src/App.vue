@@ -8,7 +8,8 @@ import PlayButton from "./components/PlayButton.vue";
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <HelloWorld msg="Hello Vue 3 + Vite" />
-  <PlayButton msg="asd?" />
+  <PlayButton audio="http://www.sonidosmp3gratis.com/sounds/car-alarm.mp3" />
+  <PlayButton audio="http://www.sonidosmp3gratis.com/sounds/010804967_prev.mp3" />
 </template>
 
 <style>
