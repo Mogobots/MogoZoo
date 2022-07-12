@@ -2,6 +2,7 @@
 import Navbar from './components/Navbar.vue'
 import Footer from './components/Footer.vue'
 import Card from './components/Card.vue'
+import Button from './components/Button.vue'
 </script>
 
 <template>

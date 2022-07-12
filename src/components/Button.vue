@@ -1,19 +1,18 @@
 <template>
-  <button class="Button" @click="saludar">{{ text }}</button>
+  <button class="Button" @click="play">{{ text }}</button>
 </template>
 
 <script>
-import { sounds } from '../api'
 export default {
   name: 'Button',
   props: {
-    text: String
+    text: String,
+    audio: String
   },
   methods: {
-    saludar() {
-      console.log('pau no te enojes')
-      console.log(sounds.get('dog'))
-      new Audio(sounds.get('dog')).play()
+    play() {
+      console.log('funciono')
+      new Audio(this.audio).play()
     }
   }
 }

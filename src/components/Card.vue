@@ -1,9 +1,13 @@
 <template>
   <div class="card">
-    <h2>{{ title }}</h2>
+    <h2>{{ animal }}</h2>
     <img :src="img" :alt="name" />
     <p>{{ description }}</p>
-    <Button text="Play"></Button>
+    <Button
+      text="Play"
+      audio="
+http://www.sonidosmp3gratis.com/sounds/ANIMALDOGPOMERANIAN_6003_50.mp3"
+    ></Button>
   </div>
 </template>
 
@@ -13,7 +17,7 @@ export default {
   name: 'Card',
   props: {
     name: String,
-    title: String,
+    animal: String,
     description: String,
     img: String
   },
