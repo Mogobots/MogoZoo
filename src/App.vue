@@ -1,24 +1,45 @@
-<script setup>
+<script>
 import Navbar from './components/Navbar.vue'
 import Footer from './components/Footer.vue'
 import Card from './components/Card.vue'
 import Button from './components/Button.vue'
+import axios from 'axios'
+
+export default {
+  components: { Navbar, Footer, Card, Button },
+  data() {
+    return {
+      animals: []
+    }
+  },
+  beforeMount() {
+    axios('https://mogozoo.herokuapp.com/animals')
+      .then(({ data }) => {
+        this.animals = data
+      })
+      .catch(error => {
+        console.log(error)
+      })
+  }
+}
 </script>
 
 <template>
   <Navbar />
   <div class="content">
     <Card
-      title="Perro de mierda"
-      img="https://i.pinimg.com/474x/b0/25/e4/b025e4e9bd8cc3c80857a645de312bba--smile-dental-dental-care.jpg"
+      v-for="animal in animals"
+      :key="animal.id"
+      :title="animal.name"
+      :img="animal.img"
       alt="chiwawa"
-      description="El chiwawa es un perro de mierda,es feo,ridiculo,se hace el malo y no caga a nadie,lo pisas y se muere."
-    ></Card>
+      :description="animal.content"
+    />
   </div>
   <Footer />
 </template>
 
-<style>
+<style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -30,5 +51,17 @@ import Button from './components/Button.vue'
 
 .content {
   min-height: 11vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100vw;
+  margin: 0 auto;
+  &__card {
+  }
+}
+
+.cards-container {
+  width: 100%;
 }
 </style>

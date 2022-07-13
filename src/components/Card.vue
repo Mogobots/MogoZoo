@@ -31,13 +31,15 @@ export default {
     'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: rgba(147, 165, 165, 0.301);
   width: 200px;
-  margin: 100px auto;
+  height: 300px;
+  margin: 20px;
   border-radius: 10px;
   text-align: center;
   overflow: hidden;
   padding-bottom: 10px;
   cursor: pointer;
   box-shadow: 1.4px 2.1px 4px rgb(118, 116, 116);
+  overflow: hidden;
 }
 
 h2 {
