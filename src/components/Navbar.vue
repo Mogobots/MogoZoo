@@ -1,7 +1,7 @@
 <template>
   <nav>
     <div class="logo">
-      <img src="../assets/gato-mogolico.jpg" alt="logo" />
+      <img src="../assets/gato.jpg" alt="logo" />
       <h2>Mogozoo</h2>
     </div>
     <input type="text" class="searchTerm" placeholder="Que animal queres ver?" />

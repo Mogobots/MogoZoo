@@ -9,10 +9,10 @@ import Button from './components/Button.vue'
   <Navbar />
   <div class="content">
     <Card
-      animal="Perro de mierda"
+      animal="Chihuahua"
       img="https://i.pinimg.com/474x/b0/25/e4/b025e4e9bd8cc3c80857a645de312bba--smile-dental-dental-care.jpg"
       alt="chiwawa"
-      description="El chiwawa es un perro de mierda,es feo,ridiculo,se hace el malo y no caga a nadie,lo pisas y se muere."
+      description="El chihuahua​ o chihuahueño​ es una raza de perro originaria de México. Es una de las razas de perros más antiguas del continente americano, además de ser el perro más pequeño del mundo. El perro chihuahua es originario del estado de Chihuahua."
     ></Card>
   </div>
   <Footer />
