@@ -1,70 +1,82 @@
 <template>
-  <nav class="topnav">
-    <a href="#" class="logo">
-      <img height="50" width="50" src="../assets/logo.png" />
-      Mogozoo
-    </a>
-    <div>
-      <input
-        type="text"
-        class="searchTerm"
-        placeholder="Que animal queres ver?"
-      />
-      <button type="submit" class="searchButton">
-        <i class="fa fa-search"></i>
-      </button>
+  <nav>
+    <div class="logo">
+      <img src="../assets/gato-mogolico.jpg" alt="logo" />
+      <h2>Mogozoo</h2>
     </div>
-    <div class="menu">
+    <input type="text" class="searchTerm" placeholder="Que animal queres ver?" />
+    <aside>
       <a href="#">Animals</a>
       <a href="#">Your pet</a>
-      <a href="#">Your Zoo</a>
+      <a href="#">Your zoo</a>
       <a href="#">Contact</a>
-    </div>
+    </aside>
   </nav>
 </template>
 
 <script>
 export default {
-  name: "Navbar",
-};
+  name: 'Navbar'
+}
 </script>
 
-<style scoped>
-.topnav {
+<style lang="scss" scoped>
+nav {
   display: flex;
+  height: 70px;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10;
+  background-color: rgb(12, 194, 97);
+  font-weight: bold;
+  position: relative;
+  box-shadow: 1.4px 2.1px 4px rgb(166, 166, 166);
 }
-
 .logo {
-  display: flex;
-  align-items: center;
-  font-size: 18px;
-  font-weight: 500;
-  color: var(--primary-color);
+  position: relative;
+  margin-right: 10px;
+}
+img {
+  width: 60px;
+  border-radius: 50%;
+  margin-left: 5px;
 }
 
-.menu a {
-  color: var(--text-color);
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 50px;
-  padding: 0 0.5rem;
+h2 {
+  position: absolute;
+  margin-top: -50px;
+  margin-left: 64px;
+  color: rgb(15, 101, 2);
+  text-shadow: 1.4px 2.1px 4px rgb(255, 255, 255);
 }
 
-.logo , .menu{
-
-  margin: 5px 20px;
+a {
+  margin: 5px;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  margin: 10px;
+  &:hover {
+    color: rgb(12, 194, 97);
+    background-color: white;
+    transition-duration: 810ms;
+    border-radius: 10px;
+    padding: 13px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
 }
 
-.menu a:hover {
-  color: var(--primary-color);
-}
-
-.searchButton {
+input {
+  height: 35px;
+  width: 400px;
+  border-radius: 10px 0px 0px 10px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.034);
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  box-shadow: 1.4px 2.1px 4px rgb(2, 103, 7);
 }
 </style>

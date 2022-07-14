@@ -9,7 +9,7 @@ import Button from './components/Button.vue'
   <Navbar />
   <div class="content">
     <Card
-      title="Perro de mierda"
+      animal="Perro de mierda"
       img="https://i.pinimg.com/474x/b0/25/e4/b025e4e9bd8cc3c80857a645de312bba--smile-dental-dental-care.jpg"
       alt="chiwawa"
       description="El chiwawa es un perro de mierda,es feo,ridiculo,se hace el malo y no caga a nadie,lo pisas y se muere."
@@ -21,5 +21,10 @@ import Button from './components/Button.vue'
 <style>
 .content {
   min-height: 100vh;
+}
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
 }
 </style>

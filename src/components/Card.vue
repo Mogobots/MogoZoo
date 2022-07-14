@@ -16,7 +16,6 @@ import Button from './Button.vue'
 export default {
   name: 'Card',
   props: {
-    name: String,
     animal: String,
     description: String,
     img: String

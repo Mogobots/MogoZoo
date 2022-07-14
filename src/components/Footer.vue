@@ -1,20 +1,22 @@
 <template>
-  <footer>
-    <div class="footer">Copyright &copy; 2022 |</div>
-  </footer>
+  <footer>Copyright © 2022</footer>
 </template>
 
 <script>
 export default {
-  name: "Footer",
-};
+  name: 'Footer'
+}
 </script>
 
 <style scoped>
-footer{
-    background-color: var(--primary-color);
-    color: white;
-    padding: 1rem 4rem;
-    text-align: center;
+footer {
+  background-color: rgb(12, 194, 97);
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 17px;
+  color: white;
 }
 </style>
