@@ -4,7 +4,7 @@
       <img src="../assets/gato.jpg" alt="logo" />
       <h2>Mogozoo</h2>
     </div>
-    <input type="text" class="searchTerm" placeholder="Que animal queres ver?" />
+    <input type="text" class="searchTerm" placeholder="What animal do you want to see?" />
     <aside>
       <a href="#">Animals</a>
       <a href="#">Your pet</a>
@@ -52,18 +52,20 @@ h2 {
 a {
   margin: 5px;
   text-decoration: none;
+  padding: 10px;
   font-size: 20px;
-  cursor: pointer;
-  color: white;
+  background-color: white;
+  color: rgb(12, 194, 97);
+  border-radius: 10px;
   margin: 10px;
   &:hover {
     color: rgb(12, 194, 97);
-    background-color: white;
-    transition-duration: 810ms;
-    border-radius: 10px;
-    padding: 13px;
-    font-weight: 900;
-    text-transform: uppercase;
+    transition: filter 0.2s;
+    filter: brightness(90%);
+  }
+  &:active {
+    transition: filter 0.2s;
+    filter: brightness(80%);
   }
 }
 

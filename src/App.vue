@@ -9,7 +9,7 @@ import Button from './components/Button.vue'
   <Navbar />
   <div class="content">
     <Card
-      animal="Chihuahua"
+      cardTitle="Chihuahua"
       img="https://i.pinimg.com/474x/b0/25/e4/b025e4e9bd8cc3c80857a645de312bba--smile-dental-dental-care.jpg"
       alt="chiwawa"
       description="El chihuahua​ o chihuahueño​ es una raza de perro originaria de México. Es una de las razas de perros más antiguas del continente americano, además de ser el perro más pequeño del mundo. El perro chihuahua es originario del estado de Chihuahua."

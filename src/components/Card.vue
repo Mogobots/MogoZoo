@@ -1,6 +1,6 @@
 <template>
   <div class="card">
-    <h2>{{ animal }}</h2>
+    <h2>{{ cardTitle }}</h2>
     <img :src="img" :alt="name" />
     <p>{{ description }}</p>
     <Button
@@ -16,9 +16,10 @@ import Button from './Button.vue'
 export default {
   name: 'Card',
   props: {
-    animal: String,
+    cardTitle: String,
     description: String,
-    img: String
+    img: String,
+    name: String
   },
   components: { Button }
 }
