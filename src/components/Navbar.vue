@@ -26,7 +26,7 @@ nav {
   height: 70px;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(12, 194, 97);
+  background: linear-gradient(220.55deg, #8fff85 0%, #39a0ff 100%);
   font-weight: bold;
   position: relative;
   box-shadow: 1.4px 2.1px 4px rgb(166, 166, 166);
@@ -37,7 +37,17 @@ nav {
 }
 img {
   width: 60px;
-  border-radius: 50%;
+  clip-path: polygon(
+    50% 0%,
+    83% 12%,
+    100% 43%,
+    94% 78%,
+    68% 100%,
+    32% 100%,
+    6% 78%,
+    0% 43%,
+    17% 12%
+  );
   margin-left: 5px;
 }
 
@@ -45,8 +55,8 @@ h2 {
   position: absolute;
   margin-top: -50px;
   margin-left: 64px;
-  color: rgb(15, 101, 2);
-  text-shadow: 1.4px 2.1px 4px rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  text-shadow: 1.4px 2.1px 4px rgb(6, 244, 185);
 }
 
 a {
@@ -54,12 +64,12 @@ a {
   text-decoration: none;
   padding: 10px;
   font-size: 20px;
-  background-color: white;
-  color: rgb(12, 194, 97);
+  background: linear-gradient(220.55deg, #00b960 0%, #00552c 100%);
+  color: rgb(215, 234, 224);
   border-radius: 10px;
   margin: 10px;
+  box-shadow: 1.4px 2.1px 4px rgb(16, 125, 16);
   &:hover {
-    color: rgb(12, 194, 97);
     transition: filter 0.2s;
     filter: brightness(90%);
   }
@@ -79,6 +89,6 @@ input {
   font-weight: bold;
   font-size: 20px;
   border: none;
-  box-shadow: 1.4px 2.1px 4px rgb(2, 103, 7);
+  box-shadow: 1.4px 2.1px 4px rgb(117, 119, 117);
 }
 </style>
