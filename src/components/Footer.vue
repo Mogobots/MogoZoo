@@ -10,7 +10,7 @@ export default {
 
 <style scoped>
 footer {
-  background-color: rgb(12, 194, 97);
+  background: linear-gradient(220.55deg, #8fff85 0%, #39a0ff 100%);
   height: 70px;
   display: flex;
   justify-content: center;

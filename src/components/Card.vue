@@ -29,7 +29,7 @@ export default {
 .card {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
     'Open Sans', 'Helvetica Neue', sans-serif;
-  background-color: rgba(147, 165, 165, 0.301);
+  background:linear-gradient(220.55deg, #EAEAEA 0%, #8B8B8B 100%);
   width: 200px;
   margin: 10px;
   border-radius: 10px;
